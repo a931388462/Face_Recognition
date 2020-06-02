@@ -17,6 +17,7 @@ def loadDataSet(k):  # k代表在10张图片中选择几张作为训练集
     dataSetDir = 'ORL'
     # 显示文件夹内容
     choose = random.permutation(10) + 1  # 随机排序1-10 (0-9）+1
+    #生成矩阵
     train_face = zeros((40 * k, 112 * 92))
     train_face_number = zeros(40 * k)
     test_face = zeros((40 * (10 - k), 112 * 92))
